@@ -1,3 +1,7 @@
+import fr from './locales/fr.json';
+import en from './locales/en.json';
+const locales = ['fr', 'en']
+
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
@@ -35,7 +39,25 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    'nuxt-i18n',
   ],
+  i18n: {
+    locales,
+    defaultLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
+      alwaysRedirect: true
+    },
+    strategy: 'no_prefix',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en,
+        fr
+      }
+    }
+  },
+
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
