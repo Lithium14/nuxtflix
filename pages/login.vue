@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <v-row align="center">
+  <v-container >
+    <v-row class="container" align="center">
       <v-form ref='form' v-model="valid" lazy-validation>
         <v-card width="450px">
 
@@ -83,4 +83,9 @@ export default {
   },
 }
 </script>
+<style scoped>
+.container{
+  background: url("/visitorLogin.jpg") no-repeat center
+}
+</style>
 
