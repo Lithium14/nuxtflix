@@ -2,7 +2,6 @@
   <v-app>
     <v-content>
       <nuxt/>
-      yoS
     </v-content>
   </v-app>
 </template>
