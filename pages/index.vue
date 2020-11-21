@@ -6,5 +6,7 @@
 
 <script>
 
-export default {}
+export default {
+  layout: 'visitor'
+}
 </script>
