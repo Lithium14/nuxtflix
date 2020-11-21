@@ -41,7 +41,7 @@
           v-row
             v-col.col-2
               v-select(
-                v-model="items[0]"
+                v-model="select"
                 :items="items"
                 outlined
                 prepend-inner-icon ="mdi-earth"
@@ -59,7 +59,8 @@ export default {
   layouts: 'visitor',
   data() {
     return {
-      items: [ 'English', 'French']
+      items: [ 'English', 'French'],
+      select: 'English'
     }
   },
   computed: {

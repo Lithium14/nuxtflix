@@ -1,7 +1,7 @@
-<template>
-  <div>
-    <h1>Hello</h1>
-  </div>
+<template lang="pug">
+  v-container
+    div
+      h1 Hello
 </template>
 
 <script>
