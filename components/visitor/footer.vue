@@ -11,7 +11,7 @@
               a.link(v-if="isPathLogin" href="/") Investor Relations<br>
               a.link(v-if="isPathLogin" href="#") Ways to Watch<br>
               a.link(v-if="isPathLogin" href="#") Corporate Information<br>
-              a.link(v-if="isPathLogin" href="#") Netflix Originals
+              a.link(v-if="isPathLogin" href="#") Nuxtflix Originals
               a.link(v-else) Cookie Preference
         v-col.col-3
           v-row
@@ -46,7 +46,7 @@
                 outlined
                 prepend-inner-icon ="mdi-earth"
               )
-              span Netflix France
+              span Nuxtflix France
 
 
 

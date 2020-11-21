@@ -31,7 +31,7 @@
               a.link(href="#") Need help ?
 
           v-col
-            span New to Netflix ?
+            span New to Nuxtflix ?
             a.link(@click="$router.push('/')")  Sign up now.
 
           v-col

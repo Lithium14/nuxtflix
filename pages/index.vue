@@ -1,12 +1,13 @@
 <template lang="pug">
-  v-container
+  v-container.mt-12
     div
-      h1 Hello
+      FAQ
 </template>
 
 <script>
-
+import FAQ from '@/components/visitor/faq'
 export default {
-  layout: 'visitor'
+  layout: 'visitor',
+  components: { FAQ }
 }
 </script>
