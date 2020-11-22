@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import { mdiEarth, mdiPlus } from '@mdi/js'
 
 export default {
   breakpoint: {
@@ -17,12 +18,18 @@ export default {
         warning: colors.amber.base,
         error: colors.deepOrange.accent4,
         success: colors.green.accent3
+      },
+      light: {
+        primary :'',
+        secondary: '',
+        accent: ''
       }
     }
   },
   icons: {
     values: {
-
+      'mdi-plus': mdiPlus,
+      'mdi-earth': mdiEarth
     }
-  }
-}
+  },
+};

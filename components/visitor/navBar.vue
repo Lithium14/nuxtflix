@@ -1,12 +1,13 @@
 <template lang="pug">
-  v-row
+  div
     v-app-bar(
-      fixed
+      style="cursor:pointer"
+      absolute
       height="60px"
       color='transparent'
-      elevation="0"
+      flat
     )
-      v-btn(color="rgb(0,0,0,0)" @click="$router.push('/')" x-large) NUXTFLIX
+      h1(@click="$router.push('/')" ).red--text NUXTFLIX
       v-spacer
       v-btn(color='red' @click="$router.push('/login')" v-if="isPathLogin") Sign in
 </template>
@@ -25,7 +26,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-
-</style>

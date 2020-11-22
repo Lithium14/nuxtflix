@@ -44,7 +44,7 @@
                 v-model="select"
                 :items="items"
                 outlined
-                prepend-inner-icon ="mdi-earth"
+                prepend-inner-icon ="$mdi-earth"
               )
               span Nuxtflix France
 

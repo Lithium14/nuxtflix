@@ -1,10 +1,9 @@
 <template lang="pug">
-  v-container.mt-12
-    div
-      Home
-      transition(name="slide-fade")
-        devicePresentation
-      FAQ
+  v-container
+    Home
+    transition(name="slide-fade")
+      devicePresentation
+    FAQ
 </template>
 
 <script>

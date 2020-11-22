@@ -6,7 +6,7 @@
         v-expansion-panel(v-for="(faq,i) in faqs" :key="i")
           v-expansion-panel-header {{ faq.title }}
             template(v-slot:actions)
-              v-icon mdi-plus
+              v-icon $mdi-plus
           v-expansion-panel-content {{ faq.content }}
       p Ready to watch? Enter your email to create or restart your membership
       v-col
