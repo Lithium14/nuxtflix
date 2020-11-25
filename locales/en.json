@@ -1,1 +1,11 @@
-{}
+{
+  "footer": {
+    "investor" : "Investor Relations",
+    "watch": "Ways to Watch",
+    "corporate": "Corporate Information",
+    "Originals":"Netflix Originals",
+    "help":"Help Center",
+    "job":"jobs",
+    "terms":"Terms of Use"
+  }
+}

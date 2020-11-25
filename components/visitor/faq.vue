@@ -8,14 +8,8 @@
             template(v-slot:actions)
               v-icon $mdi-plus
           v-expansion-panel-content {{ faq.content }}
-      p Ready to watch? Enter your email to create or restart your membership
-      v-col
-        v-text-field(
-                v-model="email"
-                :rules="emailRules"
-                label="Email address"
-                filled
-        )
+      p.text-center Ready to watch? Click on the button to create or restart your membership
+      v-col(align="center")
         v-btn() GET STARTED
 
 </template>
@@ -63,7 +57,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-
-</style>

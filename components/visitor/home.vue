@@ -6,16 +6,10 @@
           h1 Unlimited movies, TV<br> shows, and more.
           p Watch anywhere. Cancel anytime
 
-          span Ready to watch? Enter your email to create or restart your membership.
+          span Ready to watch? Click on the button to create or restart your membership.
 
         v-col.col-12(align="center" justify="center")
-          v-text-field.col-6(
-                  v-model="email"
-                  :rules="emailRules"
-                  label="Email address"
-                  filled
-          )
-          v-btn() GET STARTED
+          v-btn(@click="$router.push('/login')" color='red') GET STARTED
 
 
 </template>
