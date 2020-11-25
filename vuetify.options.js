@@ -1,5 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
-import { mdiArrowDownDropCircle, mdiEarth, mdiPlus } from '@mdi/js'
+import { mdiArrowDownDropCircle, mdiEarth, mdiEye, mdiEyeOff, mdiPlus } from '@mdi/js'
 
 export default {
   breakpoint: {
@@ -30,7 +30,9 @@ export default {
     values: {
       'mdi-plus': mdiPlus,
       'mdi-earth': mdiEarth,
-      'mdi-arrow-drop-down-circle': mdiArrowDownDropCircle
+      'mdi-arrow-drop-down-circle': mdiArrowDownDropCircle,
+      'mdi-eye': mdiEye,
+      'mdi-eye-off': mdiEyeOff
     }
   },
 };
