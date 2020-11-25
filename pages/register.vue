@@ -78,7 +78,11 @@ export default {
         v => /^(0|\+33)[1-9]([-.: ]?[0-9]{2}){4}$/.test(v) ||"Please enter a valid phone number"
       ],
       pwd: '',
-      pwdRules: [v => v.length >=4 || 'Your password must contain between 4 and 60 characters.'],
+      pwdRules: [
+        v => !v || /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(v)
+        ||
+        'At least 8 characters, one uppercase letter, one lowercase letter, one number and one special character (@, $,!,%, *,?, &)'
+      ],
       show: false
     }
   },
